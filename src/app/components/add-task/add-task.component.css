@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  height: 10vh;
+  width: 50%;
+}
+
+.container:active,
+.container:focus,
+.container:hover {
+  box-shadow: 0px 0px 10px 0px #fff;
+
+}
+
+.input-add {
+  border: none;
+  font-size: medium;
+}
+.input {
+  flex: 2;
+}
+
+.input-add:focus, 
+.input-add:active {
+  outline: none;
+}
+
+.btn {
+  width: 50px;
+}
