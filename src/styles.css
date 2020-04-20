@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(//db.onlinewebfonts.com/c/749ba57b431f4eba8b31eb57d5aab83e?family=Brandon+Text+Medium);
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap%27);
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
 body {
-    background-color: #1b262c;
+    background-color: #f2f6f5;
+    font-family: 'Rubik', sans-serif;
 }
