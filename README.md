@@ -1,6 +1,6 @@
-#To do list
+# To do list
 
-**Etapas para desenvolvimento do ToDo List**
+**Etapas para desenvolvimento do ToDo List - Grupo Ingrid, Nickolas e Caio**
 * Escolher o layout do projeto
 * Criar o projeto
 * Criar o componente do todo list (input de dados)
@@ -16,6 +16,3 @@
 * Criar função para editar a task (update com o novo texto)
 * Criar função para excluir 
 * Sincronizar os dados com o servidor
-
-**Etapas para desenvolvimento do ToDo List - Grupo Ingrid, Nickolas e Caio**
-* Escolher o layout do projeto
