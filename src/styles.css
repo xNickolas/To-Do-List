@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(//db.onlinewebfonts.com/c/749ba57b431f4eba8b31eb57d5aab83e?family=Brandon+Text+Medium);
+
+body {
+    background-color: #1b262c;
+}
