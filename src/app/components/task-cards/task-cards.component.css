@@ -1,0 +1,39 @@
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    position: relative;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.check-box {
+    margin-bottom: -8px;
+}
+
+.mat-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: -20px;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 120px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.card-title {
+    height: 100%;
+}
+
+.icons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

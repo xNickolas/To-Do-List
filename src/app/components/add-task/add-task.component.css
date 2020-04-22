@@ -3,37 +3,17 @@
   justify-content: center;
   margin: auto;
   margin-top: 10px;
-  height: 10vh;
+  height: 5vh;
   width: 50%;
-}
-
-.container:active,
-.container:focus,
-.container:hover {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-
-}
-
-.input-add {
+  border-radius: 10px;
   border: none;
-  font-size: medium;
-}
-.input {
-  flex: 2;
+  background-color: transparent;
 }
 
-.input-add:focus, 
-.input-add:active {
-  outline: none;
+
+.material-Input {
+  width: 100%;
+ color: rgb(90, 90, 90);
 }
 
-.btn {
-  width: 50px;
-  color: #5e8886;
-  cursor: pointer;
-  font-size: 1.8rem; 
-}
 
-::placeholder {
-  font-family: 'Rubik';
-}
