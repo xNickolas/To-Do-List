@@ -1,39 +1,5 @@
-.list-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.main-content {
+  width: 80%;
   margin: auto;
-  margin-top: 220px;
-  height: 10vh;
-  width: 50%;
-}
-
-.container:active,
-.container:focus,
-.container:hover {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-}
-.list-item {
-  background-color: #fff;
-}
-
-.input-add {
-  border: none;
-  font-size: medium;
-}
-.input {
-  flex: 2;
-}
-
-.input-add:focus, 
-.input-add:active {
-  outline: none;
-}
-
-.btn {
-  width: 50px;
-  color: #5e8886;
-  cursor: pointer;
-  font-size: 1.8rem; 
-  background: transparent;
+  height: 70vh;
 }

@@ -1,13 +1,8 @@
-/* .bar {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    height: 50px;
-    border-radius: 25px;
-} */
-
+.bar {
+    margin-top: 40px;
+}
 
 .bar a {
-    /* float: left; */
     color: #000000;
     text-align: center;
     padding: 14px 16px;
