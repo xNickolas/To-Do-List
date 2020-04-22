@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { MainViewComponent } from './components/main-view/main-view.component';
+import { NavBarComponent } from './components/template/menu/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AddTaskComponent,
-    MainViewComponent
+    MainViewComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
