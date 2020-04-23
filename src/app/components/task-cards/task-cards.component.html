@@ -1,16 +1,18 @@
-<app-add-task (sendTask)="sendTask($event)"></app-add-task>
+<!-- (sendTask)="sendTask($event)" -->
 <!-- <button (click)="readTask()">Mostrar tasks</button> -->
-<p *ngFor="let i of tasks">
-    <mat-card class="task-item">
-        <mat-card-content class="card-title">
-            {{ i }}
-        </mat-card-content>
-        <div class="icons-container">
-            <mat-checkbox class="check-box"></mat-checkbox>
-            <button mat-icon-button>
-                <mat-icon>delete</mat-icon>
-            </button>
-        </div>
-    </mat-card>
-</p>
+<ul class="task-list">
+    <li *ngFor="let i of tasks" class="task-list-item">
+        <mat-card class="task-item">
+            <mat-card-content class="card-title">
+                {{ i.description }}
+            </mat-card-content>
+            <div class="icons-container">
+                <mat-checkbox class="check-box"></mat-checkbox>
+                <button mat-icon-button>
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </mat-card>
+    </li>
+</ul>
 

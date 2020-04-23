@@ -8,16 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskCardsComponent implements OnInit {
 
-  tasks:any=[];
+  tasks:any;
 
   constructor(private taskService:TaskService) { }
 
   ngOnInit(): void {
-    
+    this.readTask();
+  
   }
   
-  public sendTask(input:any) : void {
-    this.tasks.push(input.tasks)
+  readTask(){
+    this.tasks = this.taskService.read();
+    console.log(this.tasks);
   }
+  
+  // public sendTask(input:any) : void {
+  //   this.tasks.push(input.tasks)
+  // }
 
 }

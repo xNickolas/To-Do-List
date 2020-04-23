@@ -8,6 +8,7 @@ export class TaskService {
 
   private urlBase = "";
   private taskObject = [];
+  private taskObjectFinal;
 
   constructor() { }
 
@@ -15,9 +16,11 @@ export class TaskService {
     console.log("entrou no create task");
     this.taskObject.push(task);
     console.log(this.taskObject);
-  }
+    // this.taskObjectFinal = Object.assign({}, this.taskObject);
+    // console.log("final object", this.taskObjectFinal);
+  } 
 
-  // read() {
-  //   return this.taskObject;
-  // }
+  read() {
+    return this.taskObject;
+  }
 }
