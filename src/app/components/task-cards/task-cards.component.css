@@ -16,7 +16,18 @@
     margin-right: -20px;
 }
 
-.task-item {
+.task-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.task-list-item {
+    text-decoration: none;
+    list-style: none;
+}
+
+.card-item {
     display: flex;
     flex-direction: column;
     width: 180px;
@@ -30,6 +41,7 @@
 
 .card-title {
     height: 100%;
+    word-wrap: break-word;
 }
 
 .icons-container {

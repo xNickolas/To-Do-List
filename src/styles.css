@@ -9,8 +9,13 @@
 
 body {
     /* background-color: #7E57C2; */
-    background-color: #c9c9c9;
-    /* background-color: #f2f6f5; */
+    /* background-color: #fff; */
+    background-color: #f2f6f5;
+    background-image: url(./assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
+    overflow: auto;
 }
 

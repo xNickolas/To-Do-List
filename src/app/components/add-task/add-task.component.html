@@ -1,9 +1,7 @@
 <div class="container">
-  <form>
-    <mat-form-field class="material-Input">
-      <mat-label>Tarefa</mat-label>
-      <input type="text" matInput placeholder="Digite a sua tarefa..." name="tasks" [(ngModel)]="input.description" (keyup.enter)="getTask()">
-      <mat-icon matSuffix>add</mat-icon>
-    </mat-form-field>
-  </form>
+  <mat-form-field class="material-Input">
+    <mat-label>Digite a sua tarefa...</mat-label>
+    <input type="text" matInput placeholder="Estudar, terminar projeto ..." name="tasks" [(ngModel)]="input.description" (keyup.enter)="getTask()">
+    <mat-icon matSuffix>add</mat-icon>
+  </mat-form-field>
 </div>

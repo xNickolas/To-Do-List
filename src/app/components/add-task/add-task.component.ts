@@ -24,6 +24,7 @@ export class AddTaskComponent implements OnInit {
   getTask() {
     let sendInfo = Object.assign({}, this.input);
     this.taskService.create(sendInfo);
+    this.input.description = "";
     //console.log(this.sendTask.emit(this.input));
   }
 }
