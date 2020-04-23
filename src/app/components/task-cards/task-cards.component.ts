@@ -21,6 +21,10 @@ export class TaskCardsComponent implements OnInit {
     this.tasks = this.taskService.read();
     console.log(this.tasks);
   }
+
+  clearCards(){
+    this.tasks.length = 0;
+  }
   
   // public sendTask(input:any) : void {
   //   this.tasks.push(input.tasks)

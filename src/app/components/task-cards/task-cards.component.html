@@ -7,12 +7,15 @@
                 {{ i.description }}
             </mat-card-content>
             <div class="icons-container">
-                <mat-checkbox class="check-box"></mat-checkbox>
+                <!-- <mat-checkbox class="check-box"></mat-checkbox> -->
                 <button mat-icon-button>
-                    <mat-icon>delete</mat-icon>
+                    <mat-icon (click)='clearCards()'>delete</mat-icon>
                 </button>
             </div>
+            <input type="checkbox" id="_checkbox">
+            <label for="_checkbox">
+                <div id="tick_mark"></div>
+            </label>
         </mat-card>
     </li>
 </ul>
-

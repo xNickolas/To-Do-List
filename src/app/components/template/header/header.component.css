@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 header {
     display: flex;
     justify-content: center;
@@ -8,3 +10,14 @@ h1 {
     color: #5e8886;
 }
 
+.Title {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: "Dosis", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    text-shadow: -0.1rem 0.2rem 0.2rem #000000;
+}
