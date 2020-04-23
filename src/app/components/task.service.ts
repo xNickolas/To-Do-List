@@ -7,12 +7,17 @@ import { Task } from './task.model';
 export class TaskService {
 
   private urlBase = "";
-  private taskObject: Task;
+  private taskObject = [];
 
   constructor() { }
 
   create(task: Task) {
-    return this.taskObject
+    console.log("entrou no create task");
+    this.taskObject.push(task);
+    console.log(this.taskObject);
   }
+
+  // read() {
+  //   return this.taskObject;
+  // }
 }
-// Objt[0].titulo2.push({id2: 'valor'});

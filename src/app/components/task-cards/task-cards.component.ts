@@ -1,3 +1,4 @@
+import { TaskService } from './../task.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskCardsComponent implements OnInit {
 
-  tasks:any=[{}];
+  tasks:any=[];
 
-  constructor() { }
+  constructor(private taskService:TaskService) { }
 
   ngOnInit(): void {
+    
   }
-
-
+  
   public sendTask(input:any) : void {
     this.tasks.push(input.tasks)
   }
