@@ -1,6 +1,5 @@
 <app-add-task (sendTask)="sendTask($event)"></app-add-task>
-
-<li *ngFor="let i of tasks">
+<p *ngFor="let i of tasks">
     <mat-card class="task-item">
         <mat-card-content class="card-title">
             {{ i }}
@@ -12,4 +11,4 @@
             </button>
         </div>
     </mat-card>
-</li>
+</p>
