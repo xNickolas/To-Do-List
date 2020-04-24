@@ -9,11 +9,13 @@ export class TaskService {
   private urlBase = "";
   private taskObject = [];
   private taskObjectFinal;
+  private id: number = 1;
 
   constructor() { }
 
   create(task: Task) {
     console.log("entrou no create task");
+    task.id = this.id++;
     this.taskObject.push(task);
     console.log(this.taskObject);
     // this.taskObjectFinal = Object.assign({}, this.taskObject);
@@ -24,8 +26,10 @@ export class TaskService {
     return this.taskObject;
   }
 
-  delete(index){
-    this.taskObject.splice(index,1);
+  delete(id){
+    this.taskObject = this.taskObject.filter(task => task.id !== id )
+    return this.taskObject;
+    // this.taskObject.splice(index,1);
   }
 
 }

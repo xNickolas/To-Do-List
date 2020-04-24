@@ -8,27 +8,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskCardsComponent implements OnInit {
 
-  tasks:any;
+  editDescription:boolean = false;
+  tasks: any;
+  status:boolean = false;
 
-  constructor(private taskService:TaskService) { }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
     this.readTask();
-  
+
   }
-  
-  readTask(){
+
+  readTask() {
     this.tasks = this.taskService.read();
     console.log(this.tasks);
   }
 
-  deleteTask(index){
+  deleteTask(index) {
     this.taskService.delete(index);
+    this.readTask();
     // let index = event.target.id;
     // this.tasks.splice(index, 1);
     // this.tasks.length = 0;
   }
-  
+
+  editTask() {
+    this.editDescription = true;
+    // this.editDescription = !this.editDescription;
+    // index.description = !index.description;
+
+  }
+
+  check(i){
+    i.status = !i.status;
+  }
+
 
   // public sendTask(input:any) : void {
   //   this.tasks.push(input.tasks)

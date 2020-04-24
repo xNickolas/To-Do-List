@@ -2,20 +2,20 @@
 <!-- <button (click)="readTask()">Mostrar tasks</button> -->
 <ul class="task-list">
     <li *ngFor="let i of tasks" class="task-list-item">
-        <mat-card class="card-item">
-            <mat-card-content class="card-title">
+        <mat-card class="card-item" [ngClass]="i.status ? 'done' : 'undone'" >
+            <mat-card-content class="card-title" [(ngModel)]="i.description"  [contentEditable]="editDescription">
                 {{ i.description }}
             </mat-card-content>
             <div class="icons-container">
-                <button mat-icon-button>
+                <button mat-icon-button  (click)="editTask()">
                     <mat-icon>edit</mat-icon>
                 </button>
                 <!-- <mat-checkbox class="check-box"></mat-checkbox> -->
-                <button mat-icon-button (click)="deleteTask(i)">
+                <button mat-icon-button (click)="deleteTask(i.id)">
                     <mat-icon>delete</mat-icon>
                 </button>
             </div>
-            <input type="checkbox" id="_checkbox">
+            <input type="checkbox" id="_checkbox" (click)="check(i)">
             <label for="_checkbox">
                 <div id="tick_mark"></div>
             </label>

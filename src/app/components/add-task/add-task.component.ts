@@ -11,7 +11,7 @@ export class AddTaskComponent implements OnInit {
   //@Output() sendTask = new EventEmitter<any>();
   
   public input:any = {
-    id: 0,
+    id: 0 ,
     description: '',
     status: false
   };
