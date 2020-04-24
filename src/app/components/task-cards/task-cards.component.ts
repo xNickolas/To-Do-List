@@ -22,10 +22,14 @@ export class TaskCardsComponent implements OnInit {
     console.log(this.tasks);
   }
 
-  clearCards(){
-    this.tasks.length = 0;
+  deleteTask(index){
+    this.taskService.delete(index);
+    // let index = event.target.id;
+    // this.tasks.splice(index, 1);
+    // this.tasks.length = 0;
   }
   
+
   // public sendTask(input:any) : void {
   //   this.tasks.push(input.tasks)
   // }

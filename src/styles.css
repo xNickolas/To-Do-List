@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap%27);
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
 
 * {
     margin: 0;
@@ -8,7 +9,8 @@
 }
 
 body {
-    background-color: #7E57C2;
+    /* background-color: #7E57C2; */
+    background-color: #E35451;
     /* background-color: #fff; */
     /* background-color: #f2f6f5;
     background-image: url(./assets/bg.jpg);
@@ -18,4 +20,141 @@ body {
     font-family: 'Rubik', sans-serif; */
     overflow: auto;
 }
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+logo1 {
+    text-align: center;
+}
+
+.logo{
+    width: 170px;
+    /* margin-top: 10px;
+    margin-bottom: -10px; */
+}
+
+/* div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 140px;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+    box-shadow: 0px 0px 20px -10px #000000;
+}
+
+div:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+div:hover:before, div:hover:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    background: #FDA8CF;
+    border-radius: 50px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+div:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
+    }
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+    25% {
+        top: 0;
+        left: 5px;
+    }
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+    50% {
+        top: 5px;
+        left: 0;
+    }
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+    75% {
+        top: 0;
+        left: -5px;
+    }
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+    25% {
+        top: 0;
+        right: 5px;
+    }
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+    50% {
+        top: 5px;
+        right: 0;
+    }
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+    75% {
+        top: 0;
+        right: -5px;
+    }
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+    100% {
+        top: -5px;
+        right: 0;
+    }
+} */
+
 

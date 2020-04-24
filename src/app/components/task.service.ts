@@ -24,4 +24,8 @@ export class TaskService {
     return this.taskObject;
   }
 
+  delete(index){
+    this.taskObject.splice(index,1);
+  }
+
 }

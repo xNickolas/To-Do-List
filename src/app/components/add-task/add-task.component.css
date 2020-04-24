@@ -19,3 +19,38 @@
   color: #3f51b5;
 }
 
+.newInput {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  height: 5vh;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  font: large;
+}
+
+
+.inputBox {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 45%;
+    height: 8%;
+    top: 25%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    /* font-family: 'Rubik One', sans-serif; */
+    text-decoration: none;
+    font-size: 1vw;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px -15px #000000;
+}
+
