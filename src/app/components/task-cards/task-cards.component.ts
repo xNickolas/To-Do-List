@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskCardsComponent implements OnInit {
 
-  editDescription:boolean = false;
+  edit = false;
   tasks: any;
   status:boolean = false;
 
@@ -33,14 +33,15 @@ export class TaskCardsComponent implements OnInit {
   }
 
   editTask() {
-    this.editDescription = true;
+    this.edit = true;
+    console.log("taks updated")
     // this.editDescription = !this.editDescription;
     // index.description = !index.description;
 
   }
 
-  check(i){
-    i.status = !i.status;
+  check(tasks){
+    tasks.status = !tasks.status;
   }
 
 
